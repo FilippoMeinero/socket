@@ -1,8 +1,9 @@
 import socket
 
-server_address = ("192.168.1.6", 6980)
-BUFFER_SIZE = 4096
-udp_client_socket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+server_address = ("192.168.1.6", 6980) # indirizzo ip e porta in una tupla
+BUFFER_SIZE = 4096 # numero di byte massimo che posso mandare o ricevere
+
+udp_client_socket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM) # DGRAM --> protocollo UDP
 
 while True:
     message = input("Scrivi un messaggio per il server: ")

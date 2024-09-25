@@ -9,7 +9,7 @@ BUFFER_SIZE = 4092  # numero di byte massimo che posso mandare o ricevere
 # creazione del socket UDP
 udp_client_socket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)    # DGRAM --> protocollo UDP
 
-# Invio di dieci messaggi
+# invio dieci messaggi
 for i in range(num_messaggi):
     message = (f"Messaggio n {i+1} dal CLIENT")
     udp_client_socket.sendto(message.encode(), server_address)

@@ -8,7 +8,7 @@ BUFFER_SIZE = 4092  # numero di byte massimo che posso mandare o ricevere
 
 # creazione socket UDP
 udp_server_socket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)    # DGRAM --> protocollo UDP
-udp_server_socket.bind(server_address) 
+udp_server_socket.bind(server_address) # associazione del socket all'indirizzo ip e alla porta
 
 
 print("Server UDP in ascolto")
