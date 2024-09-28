@@ -2,11 +2,11 @@ from pynput import keyboard
 
 def tasto_premuto(key):
     try:
-        # Verifica se il tasto premuto è una lettera
+        # verifica se il tasto premuto è una lettera
         if key.char.isalpha():
             print(f'Tasto premuto: {key.char}')
     except AttributeError:
-        # Ignora i tasti speciali (shift, ctrl...)
+        # ignora i tasti speciali (shift, ctrl...)
         pass
 
 # avvia il listener per la tastiera
